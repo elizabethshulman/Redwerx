@@ -1,3 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessor :email, :password
+  validates :email, presence: true
+  validates :password, presence:true
+  validates_confirmation_of :password
 end

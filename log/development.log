@@ -104,3 +104,2477 @@ Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8
 
 
 Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-25 20:16:11 -0400
+
+
+Started GET "/" for ::1 at 2018-03-25 20:24:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 322ms (Views: 311.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-08c0e3419b69569aced99c8f7b8e1315a4b81a778de46f6020d7c26f568c0028.css?body=1" for ::1 at 2018-03-25 20:24:31 -0400
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2018-03-25 20:24:31 -0400
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (150.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (105.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (240.7ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2018-03-25 20:24:32 -0400
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (88.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.4ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 20:27:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (164.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (110.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (250.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 20:30:36 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (165.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (103.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (225.7ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 20:31:39 -0400
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.9) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (93.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (211.7ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 20:33:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 399ms (Views: 389.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-03-25 20:33:46 -0400
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for ::1 at 2018-03-25 20:33:46 -0400
+
+
+Started GET "/assets/application.self-08c0e3419b69569aced99c8f7b8e1315a4b81a778de46f6020d7c26f568c0028.css?body=1" for ::1 at 2018-03-25 20:33:46 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2018-03-25 20:33:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2018-03-25 20:33:46 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-25 20:33:46 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2018-03-25 20:33:46 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-25 20:33:46 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-03-25 20:33:46 -0400
+
+
+Started GET "/" for ::1 at 2018-03-25 21:46:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 303ms (Views: 292.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2018-03-25 21:46:43 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-03-25 21:46:43 -0400
+
+
+Started GET "/" for ::1 at 2018-03-25 21:46:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:46:47 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:46:48 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/new" for ::1 at 2018-03-25 21:46:56 -0400
+
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (143.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (112.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (249.5ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:47:10 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:47:18 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:47:22 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/show" for ::1 at 2018-03-25 21:47:24 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 11ms (ActiveRecord: 1.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=show):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (207.2ms)
+
+
+Started GET "/users/show" for ::1 at 2018-03-25 21:47:53 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=show):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (92.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (207.4ms)
+
+
+Started GET "/users/show" for ::1 at 2018-03-25 21:47:54 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=show):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (187.5ms)
+
+
+Started GET "/users/show" for ::1 at 2018-03-25 21:47:55 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=show):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (85.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (196.6ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:48:17 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-03-25 21:48:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:48:28 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2018-03-25 21:48:29 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:48:32 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-03-25 21:48:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:52:44 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:52:45 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2018-03-25 21:53:09 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14dG5aE8THnuZZ6gyuGfwg8NGipbjetV7MCUCBQyIMPl/lCQc+YR2ep/33blUc/XVuRwx4L1Osl26mJxMgQgIQ==", "user"=>{"email"=>"testing 3/25 9:53pm", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-03-26 01:53:09.221496"], ["updated_at", "2018-03-26 01:53:09.221496"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.5ms)
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: NOT NULL constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)):
+  app/controllers/users_controller.rb:15:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (235.7ms)
+
+
+Started GET "/users/new" for ::1 at 2018-03-25 21:53:54 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2018-03-25 21:54:02 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+RictMUStNe1sjdWFXjWiW/fE1xUPfz7T3aOKdwZ7j7LYYrBF8jpd7GodoA6yIacNjZ5sY1FLWfVXHhQ+i/u3A==", "user"=>{"email"=>"testing", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-03-26 01:54:02.858159"], ["updated_at", "2018-03-26 01:54:02.858159"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: NOT NULL constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)):
+  app/controllers/users_controller.rb:15:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (111.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (98.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (216.6ms)
+
+
+Started POST "/users" for ::1 at 2018-03-25 21:54:13 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+RictMUStNe1sjdWFXjWiW/fE1xUPfz7T3aOKdwZ7j7LYYrBF8jpd7GodoA6yIacNjZ5sY1FLWfVXHhQ+i/u3A==", "user"=>{"email"=>"testing", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-03-26 01:54:13.973363"], ["updated_at", "2018-03-26 01:54:13.973363"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.8ms)
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: NOT NULL constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)):
+  app/controllers/users_controller.rb:15:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (88.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (195.1ms)
+
+
+Started POST "/users" for ::1 at 2018-03-25 21:54:35 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"14dG5aE8THnuZZ6gyuGfwg8NGipbjetV7MCUCBQyIMPl/lCQc+YR2ep/33blUc/XVuRwx4L1Osl26mJxMgQgIQ==", "user"=>{"email"=>"testing 3/25 9:53pm", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-03-26 01:54:35.573523"], ["updated_at", "2018-03-26 01:54:35.573523"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.6ms)
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: NOT NULL constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)):
+  app/controllers/users_controller.rb:16:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (191.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-25 21:55:06 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+RictMUStNe1sjdWFXjWiW/fE1xUPfz7T3aOKdwZ7j7LYYrBF8jpd7GodoA6yIacNjZ5sY1FLWfVXHhQ+i/u3A==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-03-26 01:55:06.866505"], ["updated_at", "2018-03-26 01:55:06.866505"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: NOT NULL constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)):
+  app/controllers/users_controller.rb:16:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (188.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-25 21:59:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 275ms (Views: 265.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-25 21:59:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-25 21:59:56 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 59ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-25 21:59:56 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-03-25 21:59:58 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:     <th>User Password</th>
+     7:   </tr>
+     8: 
+     9:   <% @articles.each do |article| %>
+    10:     <tr>
+    11:       <td><%= article.title %></td>
+    12:       <td><%= article.text %></td>
+  app/views/users/index.html.erb:9:in `_app_views_users_index_html_erb___1758005695284726469_70202805339100'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (108.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (233.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-25 21:59:59 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-03-25 22:00:34 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-25 22:00:46 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-25 22:00:46 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-25 22:00:53 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oJBaaIL2L8wYyA49VjGDZvc05wl7QJJ5FDV7J8rLDXKS6UwdUCxybBzST+t5gdNzrt2N5KI4Q+WOH41e7P0NkA==", "user"=>{"email"=>"Testing", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-03-26 02:00:53.012470"], ["updated_at", "2018-03-26 02:00:53.012470"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.3ms)
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: NOT NULL constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)):
+  app/controllers/users_controller.rb:16:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (108.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (208.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-25 22:02:33 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oJBaaIL2L8wYyA49VjGDZvc05wl7QJJ5FDV7J8rLDXKS6UwdUCxybBzST+t5gdNzrt2N5KI4Q+WOH41e7P0NkA==", "user"=>{"email"=>"Testing", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-03-26 02:02:33.791767"], ["updated_at", "2018-03-26 02:02:33.791767"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.6ms)
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: NOT NULL constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)):
+  app/controllers/users_controller.rb:16:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (199.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-25 22:02:43 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J3Z3u26pmi18S1u7byO1zkoxETHmvIKXpqFQ4oGrJQEVD2HOvHPHjXhRGm1Ak+XbE9h73D/EUws8i6abp50l4w==", "user"=>{"email"=>"Test", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-03-26 02:02:43.051012"], ["updated_at", "2018-03-26 02:02:43.051012"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: NOT NULL constraint failed: users.email: INSERT INTO "users" ("created_at", "updated_at") VALUES (?, ?)):
+  app/controllers/users_controller.rb:16:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (86.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (200.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-25 22:08:25 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oJBaaIL2L8wYyA49VjGDZvc05wl7QJJ5FDV7J8rLDXKS6UwdUCxybBzST+t5gdNzrt2N5KI4Q+WOH41e7P0NkA==", "user"=>{"email"=>"elizabeth", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/elizabethshulman/Documents/Ruby Practice/Redwerx/app/models/user.rb:3: syntax error, unexpected ',', expecting =>
+            :password, presence:true}
+                     ^):
+  app/models/user.rb:3: syntax error, unexpected ',', expecting =>
+  app/controllers/users_controller.rb:14:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (206.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-25 22:09:37 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oJBaaIL2L8wYyA49VjGDZvc05wl7QJJ5FDV7J8rLDXKS6UwdUCxybBzST+t5gdNzrt2N5KI4Q+WOH41e7P0NkA==", "user"=>{"email"=>"elizabeth", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "elizabeth"], ["password", "Testing again"], ["created_at", "2018-03-26 02:09:37.565138"], ["updated_at", "2018-03-26 02:09:37.565138"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 12ms (ActiveRecord: 4.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-25 22:09:41 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J3Z3u26pmi18S1u7byO1zkoxETHmvIKXpqFQ4oGrJQEVD2HOvHPHjXhRGm1Ak+XbE9h73D/EUws8i6abp50l4w==", "user"=>{"email"=>"Test", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "Test"], ["password", "Elizabeth"], ["created_at", "2018-03-26 02:09:41.809154"], ["updated_at", "2018-03-26 02:09:41.809154"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 4ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-03-25 22:09:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 54ms (Views: 28.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-25 22:09:51 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oJBaaIL2L8wYyA49VjGDZvc05wl7QJJ5FDV7J8rLDXKS6UwdUCxybBzST+t5gdNzrt2N5KI4Q+WOH41e7P0NkA==", "user"=>{"email"=>"elizabeth", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "elizabeth"], ["password", "Testing again"], ["created_at", "2018-03-26 02:09:51.060879"], ["updated_at", "2018-03-26 02:09:51.060879"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-03-25 22:09:51 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-03-25 22:10:20 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (51.9ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb2baa5c318>:0x00007fb2b974ca98>
+Did you mean?  @users):
+     8: 
+     9:   <% @users.each do |article| %>
+    10:     <tr>
+    11:       <td><%= user.email %></td>
+    12:       <td><%= user.password %></td>
+    13:     </tr>
+    14:   <% end %>
+  app/views/users/index.html.erb:11:in `block in _app_views_users_index_html_erb___1758005695284726469_70202807464620'
+  app/views/users/index.html.erb:9:in `_app_views_users_index_html_erb___1758005695284726469_70202807464620'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (230.2ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-03-25 22:10:21 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (56.1ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb2baa5c318>:0x00007fb2bb8f47b8>
+Did you mean?  @users):
+     8: 
+     9:   <% @users.each do |article| %>
+    10:     <tr>
+    11:       <td><%= user.email %></td>
+    12:       <td><%= user.password %></td>
+    13:     </tr>
+    14:   <% end %>
+  app/views/users/index.html.erb:11:in `block in _app_views_users_index_html_erb___1758005695284726469_70202807464620'
+  app/views/users/index.html.erb:9:in `_app_views_users_index_html_erb___1758005695284726469_70202807464620'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (126.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (248.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:10:27 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (23.4ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb2baa5c318>:0x00007fb2bbc497b0>
+Did you mean?  @users):
+     8: 
+     9:   <% @users.each do |article| %>
+    10:     <tr>
+    11:       <td><%= user.email %></td>
+    12:       <td><%= user.password %></td>
+    13:     </tr>
+    14:   <% end %>
+  app/views/users/index.html.erb:11:in `block in _app_views_users_index_html_erb___1758005695284726469_70202807464620'
+  app/views/users/index.html.erb:9:in `_app_views_users_index_html_erb___1758005695284726469_70202807464620'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (178.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (94.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (257.9ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2018-03-25 22:10:28 -0400
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (217.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:10:33 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb2baa5c318>:0x00007fb2b6fdf7f8>
+Did you mean?  @users):
+     8: 
+     9:   <% @users.each do |article| %>
+    10:     <tr>
+    11:       <td><%= user.email %></td>
+    12:       <td><%= user.password %></td>
+    13:     </tr>
+    14:   <% end %>
+  app/views/users/index.html.erb:11:in `block in _app_views_users_index_html_erb___1758005695284726469_70202807464620'
+  app/views/users/index.html.erb:9:in `_app_views_users_index_html_erb___1758005695284726469_70202807464620'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (97.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (210.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:10:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (27.5ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb2baa5c318>:0x00007fb2bab6ce38>
+Did you mean?  @users):
+     8: 
+     9:   <% @users.each do |article| %>
+    10:     <tr>
+    11:       <td><%= user.email %></td>
+    12:       <td><%= user.password %></td>
+    13:     </tr>
+    14:   <% end %>
+  app/views/users/index.html.erb:11:in `block in _app_views_users_index_html_erb___1758005695284726469_70202807464620'
+  app/views/users/index.html.erb:9:in `_app_views_users_index_html_erb___1758005695284726469_70202807464620'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (93.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (205.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:10:40 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (25.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb2baa5c318>:0x00007fb2bbba2668>
+Did you mean?  @users):
+     8: 
+     9:   <% @users.each do |article| %>
+    10:     <tr>
+    11:       <td><%= user.email %></td>
+    12:       <td><%= user.password %></td>
+    13:     </tr>
+    14:   <% end %>
+  app/views/users/index.html.erb:11:in `block in _app_views_users_index_html_erb___1758005695284726469_70202807464620'
+  app/views/users/index.html.erb:9:in `_app_views_users_index_html_erb___1758005695284726469_70202807464620'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:10:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (26.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb2baa5c318>:0x00007fb2ba819d80>
+Did you mean?  @users):
+     8: 
+     9:   <% @users.each do |article| %>
+    10:     <tr>
+    11:       <td><%= user.email %></td>
+    12:       <td><%= user.password %></td>
+    13:     </tr>
+    14:   <% end %>
+  app/views/users/index.html.erb:11:in `block in _app_views_users_index_html_erb___1758005695284726469_70202807464620'
+  app/views/users/index.html.erb:9:in `_app_views_users_index_html_erb___1758005695284726469_70202807464620'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (187.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:11:29 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:11:44 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:14:50 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-25 22:14:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-25 22:14:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:14:56 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-25 22:14:59 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x00007fb2baa5c318>:0x00007fb2b9111f70>):
+    15:   </p>
+    16: <% end %>
+    17: 
+    18: <%= link_to 'Back to Home', root %>
+  app/views/users/new.html.erb:18:in `_app_views_users_new_html_erb___1690129840896087550_70202763314100'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (214.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-25 22:15:23 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-25 22:15:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:15:29 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:17:28 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2018-03-25 22:17:32 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TOp6CMpHjXmL8kBik8utXsXGs2hz0cXD5kH4sabpmqd+k2x9GJ3Q2Y/oAbS8e/1LnC/ZhaqpFF98aw7IgN+aRQ==", "id"=>"2"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template users/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/elizabethshulman/Documents/Ruby Practice/Redwerx/app/views"
+):
+  actionview (4.2.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.9) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.9) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.9) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (113.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (89.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (202.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:20:08 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:20:09 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2018-03-25 22:20:12 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9Jm7tVnhY3YxZKAKw64QgbDTjSIXSgatmCbgirN/5HPG4K3Aizs+1jV+4dzsHkCU6Trnz84y1zECDBbzlUnkkQ==", "id"=>"2"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template users/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/elizabethshulman/Documents/Ruby Practice/Redwerx/app/views"
+):
+  actionview (4.2.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.9) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.9) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.9) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (103.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (203.3ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2018-03-25 22:20:27 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9Jm7tVnhY3YxZKAKw64QgbDTjSIXSgatmCbgirN/5HPG4K3Aizs+1jV+4dzsHkCU6Trnz84y1zECDBbzlUnkkQ==", "id"=>"2"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template users/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/elizabethshulman/Documents/Ruby Practice/Redwerx/app/views"
+):
+  actionview (4.2.9) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.9) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.9) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.9) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.9) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.9) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.9) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.9) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.9) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.9) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.9) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.9) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.9) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.9) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.9) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.9) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.9) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.9) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.9) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.9) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.9) lib/rack/etag.rb:24:in `call'
+  rack (1.6.9) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.9) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.9) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.9) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.9) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (107.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (103.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (230.0ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2018-03-25 22:21:06 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9Jm7tVnhY3YxZKAKw64QgbDTjSIXSgatmCbgirN/5HPG4K3Aizs+1jV+4dzsHkCU6Trnz84y1zECDBbzlUnkkQ==", "id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 2]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 15ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:21:08 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/3" for 127.0.0.1 at 2018-03-25 22:21:11 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mYKVG3gbe2nbvBFnx5PqnGYB7k7q+HrHKEdAPQsl8TGr+4NuqsEmyd+mULHoI7qJP+iEozOAq1uybbZELRPx0w==", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:21:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2018-03-25 22:21:14 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KMLijWoy1+GmY7ZWBBYF5KXIpNFTZduF8VlxcnOhD3Uau/T4uOiKQaJ594ArplXx/CHOPIodChlrc4cLVZcPlw==", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:21:14 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-25 22:21:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:21:23 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-25 22:21:26 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-25 22:21:41 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ht+48WTPjd9bF1T82n+6CR0EifgSD09B2GdHWsrUTSkspq6EthXQf18NFSr1z+ocRO3jFct3nt1CTbEj7OJNyw==", "user"=>{"email"=>"Wahooo users can be created and stored", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "Wahooo users can be created and stored"], ["password", "Testing again before pushing"], ["created_at", "2018-03-26 02:21:41.682765"], ["updated_at", "2018-03-26 02:21:41.682765"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 5ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-03-25 22:21:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-03-25 22:22:10 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-25 22:22:12 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:22:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/4" for 127.0.0.1 at 2018-03-25 22:22:20 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"M8ew72GneXeOf2YVuf9TUGETgEGqw2c/rRHrBEkv/7gBvqaas30k14plJ8OWTwNFOPrqrHO7tqM3Ox19bxn/Wg==", "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 4]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-25 22:22:20 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 02:22:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 306ms (Views: 295.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e7349d9c5b44e2f3b9122ba47c4a8ae9ad034b92003a6196863ffd22fe0c22ae.css?body=1" for 127.0.0.1 at 2018-03-26 02:22:23 -0400
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-26 02:22:29 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-26 02:22:47 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N1RJgYB31OBQmLFL+Op71OUs+B3GNNTh/skqsIW6aWwFLV/0Uq2JQFSC8J3XWivBvMWS8B9MBX1k49zJo4xpjg==", "user"=>{"email"=>"mrt28@duke.edu", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "mrt28@duke.edu"], ["password", "elizabeth"], ["created_at", "2018-03-26 06:22:47.866848"], ["updated_at", "2018-03-26 06:22:47.866848"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 22ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2018-03-26 02:22:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 31.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 02:22:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-26 02:22:52 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/5" for 127.0.0.1 at 2018-03-26 02:22:57 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KiJAN7PLEsD22ro/JKk5TTryAUptbBwqV2p2UQJD6O0YW1ZCYRFPYPLA++kLGWlYYxtrp7QUzbbNQIAoJHXoDw==", "id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-26 02:22:57 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 04:59:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 349ms (Views: 335.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+
+Started GET "/assets/application.self-e7349d9c5b44e2f3b9122ba47c4a8ae9ad034b92003a6196863ffd22fe0c22ae.css?body=1" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2018-03-30 04:59:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (197.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (120.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (269.2ms)
+
+
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2018-03-30 04:59:24 -0400
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.9) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.9) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.9) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.9) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.9) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.9) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.9) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.9) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.9) lib/rails/engine.rb:518:in `call'
+  railties (4.2.9) lib/rails/application.rb:165:in `call'
+  rack (1.6.9) lib/rack/lock.rb:17:in `call'
+  rack (1.6.9) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.9) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+  /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (147.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (95.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (213.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 04:59:25 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-30 04:59:30 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-30 04:59:44 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+cVmn7YrR36kTdFBW1llWOr7vl6RYcuexDlP851DxuHLvHDqZPEa3qBXkJd06TVNsxLUs0gZGgJeE7mKu3XGAw==", "user"=>{"email"=>"Testing User Creation", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "Testing User Creation"], ["password", "registering rn"], ["created_at", "2018-03-30 08:59:44.135644"], ["updated_at", "2018-03-30 08:59:44.135644"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 15ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2018-03-30 04:59:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 33ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 04:59:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 04:59:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/6" for 127.0.0.1 at 2018-03-30 04:59:50 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KjvsjOh3Wzfsfm7hWmSkDkMTPvLF8JKPso1gb5F6m+cYQvr5Oq0Gl+hkLzd11PQbGvpUHxyIQxMop5YWt0ybBQ==", "id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 6]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 04:59:50 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 04:59:52 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:02:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 321ms (Views: 311.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:02:41 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 54ms (Views: 49.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:02:47 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-30 05:02:48 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-30 05:02:43 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N2e6NScl8ISl9PTvNrZYUL5xmC4Jdu/JJM0lQNSPYQ0FHqxA9f+tJKHutTkZBghF55jyw9AOPlW+59M58rlh7w==", "user"=>{"email"=>"Debugging Links", "password"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "Debugging Links"], ["password", "registering rn"], ["created_at", "2018-03-30 09:02:43.456274"], ["updated_at", "2018-03-30 09:02:43.456274"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/7
+Completed 302 Found in 12ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2018-03-30 05:02:43 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 20.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:02:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:02:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/7" for 127.0.0.1 at 2018-03-30 05:02:51 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"C0R3LePo+7WpRSBTTUHpuIoUS8cPeazvi+24pNZsqTA5PWFYMTKmFa1fYYVi8bmt0/0hKtYBfXMRx07d8Fqp0g==", "id"=>"7"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 7]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:02:51 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:02:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:04:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:04:46 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.6ms)
+
+NameError (undefined local variable or method `attribute2' for #<Class:0x00007fac324fe648>
+Did you mean?  attribute):
+  app/models/user.rb:5:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `index'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (117.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (101.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (231.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-30 05:04:48 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-30 05:05:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-30 05:06:03 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-30 05:06:18 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k8ATAmlMj9fslkYaxkLSeEl39+y4qFMRKBF83jF+QbehuQV3u5bSd+iMB8zp8oJtEJ6dAWHQgo2yO4qnF0hBVQ==", "user"=>{"email"=>"elizabeth.shulman@duke.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save User"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `attribute2' for #<Class:0x00007fac322a17d8>
+Did you mean?  attribute):
+  app/models/user.rb:5:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:14:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (93.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (208.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-30 05:06:29 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-30 05:06:38 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WNXqUFjSW+4WvPH3whah2ohXntWIggDntDcfsyD38dVqrPwliggGThKmsCHtpvHP0b70OFH60XsuHenKBsHxNw==", "user"=>{"email"=>"elizabeth.shulman@duke.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save User"}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `attr_accessible' for #<Class:0x00007fac32444c20>
+Did you mean?  attr_accessor):
+  app/models/user.rb:5:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:14:in `create'
+
+
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.7ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (89.0ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/elizabethshulman/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (217.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-30 05:06:52 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k8ATAmlMj9fslkYaxkLSeEl39+y4qFMRKBF83jF+QbehuQV3u5bSd+iMB8zp8oJtEJ6dAWHQgo2yO4qnF0hBVQ==", "user"=>{"email"=>"elizabeth.shulman@duke.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save User"}
+Unpermitted parameter: password_confirmation
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "elizabeth.shulman@duke.edu"], ["password", "testingpass"], ["created_at", "2018-03-30 09:06:52.606604"], ["updated_at", "2018-03-30 09:06:52.606604"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/8
+Completed 302 Found in 11ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/8" for 127.0.0.1 at 2018-03-30 05:06:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:06:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:06:56 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/8" for 127.0.0.1 at 2018-03-30 05:07:00 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+vQblwjep6WpoZCYdwa2Q6IdjJ0g/4B/Rj8XfMp/pHbIjQ3i2gT6Ba270U5YtuZW+/TmcPmHUePcFeEF7EmklA==", "id"=>"8"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 8]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:07:00 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:07:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:07:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:07:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-30 05:07:40 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:08:12 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-30 05:08:14 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-30 05:08:23 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1dwYYr3jP8rhk2575yokWZheXC7ppnXtv8AFKZDePkTnpQ4XbzliauWJL63ImnRMwbc2wzDepHEl6vNQtug+pg==", "user"=>{"email"=>"elizabeth@duke.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save User"}
+Unpermitted parameter: password_confirmation
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "elizabeth@duke.edu"], ["password", "test"], ["created_at", "2018-03-30 09:08:23.482240"], ["updated_at", "2018-03-30 09:08:23.482240"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/9
+Completed 302 Found in 5ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/9" for 127.0.0.1 at 2018-03-30 05:08:23 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:08:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:08:26 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/9" for 127.0.0.1 at 2018-03-30 05:08:29 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Xq1fmqhx4YmJvEvl7i8cfeZgkMJB0Gx4jnXMB4rDPRRs1Envequ8KY2mCjPBn0xov4n6L5ioveQUXzp+rPU99g==", "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:08:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:08:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-03-30 05:08:49 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:08:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-03-30 05:08:51 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:08:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-30 05:09:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 82.4ms | ActiveRecord: 0.0ms)
