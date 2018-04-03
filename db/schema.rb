@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180402023728) do
+ActiveRecord::Schema.define(version: 20180403145250) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20180402023728) do
     t.integer  "subforum_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.text     "body"
   end
 
   add_index "posts", ["subforum_id"], name: "index_posts_on_subforum_id"
