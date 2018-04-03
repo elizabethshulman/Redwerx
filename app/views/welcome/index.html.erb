@@ -1,3 +1,12 @@
 <h1>redwerx</h1>
-<%= link_to 'View Users', controller: 'users' %>
-<%= link_to 'Register', new_user_path %>
+
+<div class = "userreg">
+  <h3> manage users </h3>
+  <%= link_to 'View Users', controller: 'users' %><br>
+  <%= link_to 'Register', new_user_path %><br><br>
+</div>
+
+<h2>active subforums</h2>
+<% @subforums.each do |s| %>
+    <%= link_to s.title, subforum_path(s) %><br>
+<% end %>

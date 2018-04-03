@@ -1,0 +1,4 @@
+<h1>all subforums</h1>
+<% @subforums.each do |s| %>
+    <%= link_to s.title, subforum_path(s) %><br>
+<% end %>
