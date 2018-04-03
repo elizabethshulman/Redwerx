@@ -1,0 +1,28 @@
+<p>
+  <h1> r/<%= @subforum.title %></h1>
+</p>
+
+<h2>Posts</h2>
+<% @subforum.posts.each do |post| %>
+
+  <p>
+    <strong>Post:</strong>
+    <%= post.body %>
+  </p>
+<% end %>
+
+
+<h2>Add a post:</h2>
+<%= form_for([@subforum, @subforum.posts.build]) do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
