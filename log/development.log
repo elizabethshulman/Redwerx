@@ -6536,3 +6536,832 @@ Processing by SubforumsController#show as HTML
   [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 2]]
   Rendered subforums/show.html.erb within layouts/application (7.2ms)
 Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 15:35:54 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mSubforum Load (0.2ms)[0m  SELECT "subforums".* FROM "subforums"
+  Rendered welcome/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 649ms (Views: 630.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/subforums.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/application.self-acf46f9069a2e8b1896795eb991dc56a66627833e63c833aa79832d1511e4a6b.css?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/welcome.self-9feef6b590167746a2f3f13da5a14f8807cb963e4d3bed73d5237e7529a1b048.css?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/subforums.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2018-04-04 15:35:55 -0400
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:36:18 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.7ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (86.2ms)
+Completed 200 OK in 148ms (Views: 135.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:36:23 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gUauv1S+E0YJl626jgcobvreFAld5HIRZ5PoKTkOTsxQ5WOQYZqGNez47d6PXyml7gZkPzd76QnQt/oH8qUzOg==", "post"=>{"title"=>"hello", "body"=>"hi\r\n"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "hello"], ["body", "hi\r\n"], ["created_at", "2018-04-04 19:36:23.498481"], ["updated_at", "2018-04-04 19:36:23.498481"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 3.0ms)
+
+NoMethodError (undefined method `post_url' for #<PostsController:0x00007fd7aca18b60>):
+  app/controllers/posts_controller.rb:23:in `create'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.1ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.6ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:37:05 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubforum Load (0.2ms)[0m  SELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?[0m  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:44:08 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubforum Load (0.1ms)[0m  SELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?[0m  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 79ms (Views: 72.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:44:12 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2EGOWkTYQsntNUyBHk+C5gSR5FbzNbI9Rwzk6Ut/FxoJ4kN1cfzXughaDOUfF4MtEEmUYJmqKSXwKPbHgNRq7A==", "post"=>{"title"=>"hi", "body"=>"hello"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `posts' for nil:NilClass):
+  app/controllers/posts_controller.rb:20:in `create'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.2ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:45:29 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2EGOWkTYQsntNUyBHk+C5gSR5FbzNbI9Rwzk6Ut/FxoJ4kN1cfzXughaDOUfF4MtEEmUYJmqKSXwKPbHgNRq7A==", "post"=>{"title"=>"hi", "body"=>"hello"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[35mSubforum Load (0.1ms)[0m  SELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "body", "subforum_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "hi"], ["body", "hello"], ["subforum_id", 1], ["created_at", "2018-04-04 19:45:29.511080"], ["updated_at", "2018-04-04 19:45:29.511080"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 2.3ms)
+
+NoMethodError (undefined method `post_url' for #<PostsController:0x00007fd7ac8a1de0>):
+  app/controllers/posts_controller.rb:24:in `create'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.1ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.0ms)
+
+
+Started GET "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:46:04 -0400
+Processing by PostsController#index as HTML
+  Parameters: {"subforum_id"=>"1"}
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1> <%= @post.title %> </h1>
+    2: <p>
+    3:   <%=
+    4:     @post.body
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb___3398238792771157620_70282159199660'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 15:46:07 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mSubforum Load (0.3ms)[0m  SELECT "subforums".* FROM "subforums"
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:46:08 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:46:13 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NKy53SodVL/r2XL8+GbKWkP7PRqWA57iUF6nmXL1XJTlD3TyHznBzA62Mpj5PsuRVyNNLPycBfrnerW3uV4hYg==", "post"=>{"title"=>"test", "body"=>"hi"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "body", "subforum_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test"], ["body", "hi"], ["subforum_id", 1], ["created_at", "2018-04-04 19:46:13.164712"], ["updated_at", "2018-04-04 19:46:13.164712"]]
+  [1m[35m (9.7ms)[0m  commit transaction
+Redirected to 
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 10.2ms)
+
+NoMethodError (undefined method `post_url' for #<PostsController:0x00007fd7acaf6b40>):
+  app/controllers/posts_controller.rb:24:in `create'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (159.5ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:46:56 -0400
+
+SyntaxError (/Users/dinasaur/Desktop/Duke/Adwerx/Redwerx/app/controllers/posts_controller.rb:24: syntax error, unexpected ')', expecting '='
+redirect_to (@subforum, @post)
+                              ^):
+  app/controllers/posts_controller.rb:24: syntax error, unexpected ')', expecting '='
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.1ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 15:49:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mSubforum Load (0.2ms)[0m  SELECT "subforums".* FROM "subforums"
+  Rendered welcome/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 363ms (Views: 344.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:49:22 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.2ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (98.1ms)
+Completed 200 OK in 138ms (Views: 128.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:49:27 -0400
+
+SyntaxError (/Users/dinasaur/Desktop/Duke/Adwerx/Redwerx/app/controllers/posts_controller.rb:24: syntax error, unexpected ')', expecting '='
+redirect_to (@subforum, @post)
+                              ^):
+  app/controllers/posts_controller.rb:24: syntax error, unexpected ')', expecting '='
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.9ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (174.2ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:49:35 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj0N93qPRR1/jANHwyNxsrjTdwKqVwnw01hgn9fGVU1jnsDYT6vQbprjQyPCe3B5rAsHNMDIkuhkfHKxHG0ouw==", "post"=>{"title"=>"test", "body"=>"hi"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "body", "subforum_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test"], ["body", "hi"], ["subforum_id", 1], ["created_at", "2018-04-04 19:49:35.588239"], ["updated_at", "2018-04-04 19:49:35.588239"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to 
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.3ms)
+
+NoMethodError (undefined method `post_url' for #<PostsController:0x00007fb7cb5e7b78>):
+  app/controllers/posts_controller.rb:24:in `create'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.7ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:53:59 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj0N93qPRR1/jANHwyNxsrjTdwKqVwnw01hgn9fGVU1jnsDYT6vQbprjQyPCe3B5rAsHNMDIkuhkfHKxHG0ouw==", "post"=>{"title"=>"test", "body"=>"hi"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.2ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "body", "subforum_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test"], ["body", "hi"], ["subforum_id", 1], ["created_at", "2018-04-04 19:53:59.798298"], ["updated_at", "2018-04-04 19:53:59.798298"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 3.2ms)
+
+NoMethodError (undefined method `subforum_post' for #<PostsController:0x00007fb7cfc3a0d0>
+Did you mean?  subforum_post_url
+               subforums_path
+               subforum_path
+               subforum_url):
+  app/controllers/posts_controller.rb:24:in `create'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (139.9ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:54:14 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj0N93qPRR1/jANHwyNxsrjTdwKqVwnw01hgn9fGVU1jnsDYT6vQbprjQyPCe3B5rAsHNMDIkuhkfHKxHG0ouw==", "post"=>{"title"=>"test", "body"=>"hi"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "body", "subforum_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test"], ["body", "hi"], ["subforum_id", 1], ["created_at", "2018-04-04 19:54:14.210941"], ["updated_at", "2018-04-04 19:54:14.210941"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/subforums/1/posts/13
+Completed 302 Found in 20ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/subforums/1/posts/13" for 127.0.0.1 at 2018-04-04 15:54:15 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"13"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  app/controllers/posts_controller.rb:32:in `post_params'
+  app/controllers/posts_controller.rb:8:in `show'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.1ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.8ms)
+
+
+Started GET "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:54:53 -0400
+Processing by PostsController#index as HTML
+  Parameters: {"subforum_id"=>"1"}
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <h1> <%= @post.title %> </h1>
+    2: <p>
+    3:   <%=
+    4:     @post.body
+  app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb___736785452334243303_70213690018280'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (186.8ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:54:53 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.2ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 15:54:55 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mSubforum Load (0.2ms)[0m  [1mSELECT "subforums".* FROM "subforums"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 15:54:55 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mSubforum Load (0.2ms)[0m  SELECT "subforums".* FROM "subforums"
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:54:56 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:54:59 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KWr9JOiiBSgs/jdgWyhvfvXtAtL9eiPQKjYiskys4nv4yTAL3YaQW8mRdwRacG614TVy5JfluMidEjCchwefjQ==", "post"=>{"title"=>"hi", "body"=>"hihi"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "subforum_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "hi"], ["body", "hihi"], ["subforum_id", 1], ["created_at", "2018-04-04 19:54:59.871794"], ["updated_at", "2018-04-04 19:54:59.871794"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/subforums/1/posts/14
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/subforums/1/posts/14" for 127.0.0.1 at 2018-04-04 15:54:59 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"14"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  app/controllers/posts_controller.rb:32:in `post_params'
+  app/controllers/posts_controller.rb:8:in `show'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 15:56:22 -0400
+Processing by WelcomeController#index as HTML
+  [1m[36mSubforum Load (0.3ms)[0m  [1mSELECT "subforums".* FROM "subforums"[0m
+  Rendered welcome/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 54ms (Views: 49.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:56:24 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubforum Load (0.2ms)[0m  SELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?[0m  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 50ms (Views: 46.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:56:30 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eZb4QM1pwnw57Dzr3E/Y0G1Sh6JyLYvNcLwDUy/vmGGoNTVv+E1XD9yDfI/dF9kbeYr3lBiyENXHmBF95ETllw==", "post"=>{"title"=>"title", "body"=>"bod"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[35mSubforum Load (0.2ms)[0m  SELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameters: utf8, authenticity_token, post, commit, subforum_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("subforum_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["subforum_id", 1], ["created_at", "2018-04-04 19:56:30.328069"], ["updated_at", "2018-04-04 19:56:30.328069"]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/subforums/1/posts/15
+Completed 302 Found in 16ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/subforums/1/posts/15" for 127.0.0.1 at 2018-04-04 15:56:30 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"15"}
+Unpermitted parameters: subforum_id, id
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'={}):
+  app/controllers/posts_controller.rb:8:in `show'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (161.0ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:56:32 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.2ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:56:37 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TKnXHVGMILY05r8MKwazNUlelCmTNxb9/1GLYJz6YFedChoyZKi1xdGJ/2gqXrL+XYbkH/mojeVIdZlOV1EdoQ==", "post"=>{"title"=>"hi", "body"=>"hi\r\n"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameters: utf8, authenticity_token, post, commit, subforum_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("subforum_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["subforum_id", 1], ["created_at", "2018-04-04 19:56:37.080777"], ["updated_at", "2018-04-04 19:56:37.080777"]]
+  [1m[35m (9.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/subforums/1/posts/16
+Completed 302 Found in 15ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/subforums/1/posts/16" for 127.0.0.1 at 2018-04-04 15:56:37 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"16"}
+Unpermitted parameters: subforum_id, id
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'={}):
+  app/controllers/posts_controller.rb:8:in `show'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.2ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 15:57:52 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mSubforum Load (0.4ms)[0m  SELECT "subforums".* FROM "subforums"
+  Rendered welcome/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 15:57:53 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 15:57:57 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xDYjNICPy3coKtHNERPVdY1uNJM8Bf/eEuNR4vqcwj0Vle4btateBM1FkakQS9S+mbZEpVaaZMalx0PMMTe/yw==", "post"=>{"title"=>"test", "body"=>"body"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameters: utf8, authenticity_token, post, commit, subforum_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "posts" ("subforum_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["subforum_id", 1], ["created_at", "2018-04-04 19:57:57.896888"], ["updated_at", "2018-04-04 19:57:57.896888"]]
+  [1m[35m (9.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/subforums/1/posts/17
+Completed 302 Found in 16ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/subforums/1/posts/17" for 127.0.0.1 at 2018-04-04 15:57:57 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"17"}
+Unpermitted parameters: subforum_id, id
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=):
+  app/controllers/posts_controller.rb:8:in `show'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (162.4ms)
+
+
+Started GET "/subforums/1/posts/17" for 127.0.0.1 at 2018-04-04 16:00:32 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"17"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 56.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 16:00:35 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.3ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 48ms (Views: 36.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 16:00:39 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SNgIBqBFoQShq4GEsRKczOBf0SAKm/tc8KxAm5vdK22Ze8UplWE0d0TEweCwSp0H9IehFmAEYERHiFK1UHZWmw==", "post"=>{"title"=>"hi", "body"=>"hello"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameters: utf8, authenticity_token, post, commit, subforum_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("subforum_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["subforum_id", 1], ["created_at", "2018-04-04 20:00:39.780655"], ["updated_at", "2018-04-04 20:00:39.780655"]]
+  [1m[35m (8.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/subforums/1/posts/18
+Completed 302 Found in 15ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/subforums/1/posts/18" for 127.0.0.1 at 2018-04-04 16:00:39 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"18"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 18]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 16:05:26 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mSubforum Load (0.6ms)[0m  SELECT "subforums".* FROM "subforums"
+  Rendered welcome/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 89ms (Views: 75.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 16:05:27 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.2ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 16:05:30 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9tJsxnzTeY1Wf/j4jCcFJ4VArMH+hqLAbOdYbCUW7l4ncaHpSffs/rMQuJyNfwTskZjc95QZOdjbw0pC7r2TqA==", "post"=>{"title"=>"hi", "body"=>"helo"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ArgumentError (wrong number of arguments (given 2, expected 0..1)):
+  app/controllers/posts_controller.rb:32:in `post_params'
+  app/controllers/posts_controller.rb:21:in `create'
+
+
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionpack-4.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.8ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.0ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/dinasaur/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (160.9ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 16:06:23 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9tJsxnzTeY1Wf/j4jCcFJ4VArMH+hqLAbOdYbCUW7l4ncaHpSffs/rMQuJyNfwTskZjc95QZOdjbw0pC7r2TqA==", "post"=>{"title"=>"hi", "body"=>"helo"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[35mSubforum Load (0.2ms)[0m  SELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?[0m  [["subforum_id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+Unpermitted parameters: utf8, authenticity_token, post, commit, subforum_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("subforum_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["subforum_id", 1], ["created_at", "2018-04-04 20:06:23.327004"], ["updated_at", "2018-04-04 20:06:23.327004"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/subforums/1/posts/19
+Completed 302 Found in 24ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/subforums/1/posts/19" for 127.0.0.1 at 2018-04-04 16:06:24 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"19"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 19]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 16:06:26 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 16:06:30 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tKhKhF4noUV5mXuZ9f+HZZGypvH8mjx4Xrz7YWiep95lC4erawM0Npz2O/30p4auhWrWx5YFp2DpmOlPozXaKA==", "post"=>{"title"=>"test", "body"=>"123\r\n"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.2ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?[0m  [["subforum_id", 1]]
+Unpermitted parameters: utf8, authenticity_token, post, commit, subforum_id
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("subforum_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["subforum_id", 1], ["created_at", "2018-04-04 20:06:30.344681"], ["updated_at", "2018-04-04 20:06:30.344681"]]
+  [1m[35m (8.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/subforums/1/posts/20
+Completed 302 Found in 16ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/subforums/1/posts/20" for 127.0.0.1 at 2018-04-04 16:06:30 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"20"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 20]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" DESC LIMIT 1
+
+
+Started GET "/subforums/1/posts/20" for 127.0.0.1 at 2018-04-04 16:08:09 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"20"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 20]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 69ms (Views: 57.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/subforums/1/posts" for 127.0.0.1 at 2018-04-04 16:08:12 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9tJsxnzTeY1Wf/j4jCcFJ4VArMH+hqLAbOdYbCUW7l4ncaHpSffs/rMQuJyNfwTskZjc95QZOdjbw0pC7r2TqA==", "post"=>{"title"=>"hi", "body"=>"helo"}, "commit"=>"Create Post", "subforum_id"=>"1"}
+  [1m[36mSubforum Load (0.2ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("title", "body", "subforum_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "hi"], ["body", "helo"], ["subforum_id", 1], ["created_at", "2018-04-04 20:08:12.590139"], ["updated_at", "2018-04-04 20:08:12.590139"]]
+  [1m[35m (8.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/subforums/1/posts/21
+Completed 302 Found in 22ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/subforums/1/posts/21" for 127.0.0.1 at 2018-04-04 16:08:12 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subforum_id"=>"1", "id"=>"21"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 21]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/subforums/2" for 127.0.0.1 at 2018-04-04 16:08:55 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSubforum Load (0.1ms)[0m  SELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?[0m  [["subforum_id", 2]]
+  Rendered subforums/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 16:08:58 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubforum Load (0.1ms)[0m  SELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?[0m  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-04 16:09:06 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mSubforum Load (0.1ms)[0m  SELECT "subforums".* FROM "subforums"
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/subforums/1" for 127.0.0.1 at 2018-04-04 16:09:06 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubforum Load (0.1ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 1]]
+  Rendered subforums/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subforums/3" for 127.0.0.1 at 2018-04-04 16:09:23 -0400
+Processing by SubforumsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSubforum Load (0.2ms)[0m  [1mSELECT  "subforums".* FROM "subforums" WHERE "subforums"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subforum_id" = ?  [["subforum_id", 3]]
+  Rendered subforums/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.4ms)

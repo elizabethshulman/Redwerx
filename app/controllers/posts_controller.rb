@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(post_params)
+    @post = Post.find(params[:id])
   end
 
   def new
@@ -17,10 +17,11 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
+    @subforum = Subforum.find(params[:subforum_id])
+    @post = @subforum.posts.new(post_params)
 
     if @post.save
-      redirect_to @post
+      redirect_to subforum_post_url(@subforum, @post)
     else
       render 'new'
     end
@@ -28,6 +29,6 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:title, :body)
+      params.require(:post).permit(:title,:body)
     end
 end
