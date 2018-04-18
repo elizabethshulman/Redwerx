@@ -9,20 +9,7 @@
     <strong>Post:</strong>
     <%= post.body %>
   </p> -->
-<% end %>
 
+  <h3> <%= link_to post.title, subforum_post_url(@subforum, post) %> </h3>
 
-<h2>Add a post:</h2>
-<%= form_for([@subforum, @subforum.posts.build]) do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
 <% end %>
